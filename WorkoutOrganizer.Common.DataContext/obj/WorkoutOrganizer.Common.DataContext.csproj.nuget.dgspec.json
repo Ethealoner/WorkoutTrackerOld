@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutOrganizer.Common.DataEntity.csproj": {
-                "projectPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutOrganizer.Common.DataEntity.csproj"
+              "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutTracker.Common.DataEntity.csproj": {
+                "projectPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutTracker.Common.DataEntity.csproj"
               }
             }
           }
@@ -87,12 +87,12 @@
         }
       }
     },
-    "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutOrganizer.Common.DataEntity.csproj": {
+    "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutTracker.Common.DataEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutOrganizer.Common.DataEntity.csproj",
-        "projectName": "WorkoutOrganizer.Common.DataEntity",
-        "projectPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutOrganizer.Common.DataEntity.csproj",
+        "projectUniqueName": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutTracker.Common.DataEntity.csproj",
+        "projectName": "WorkoutTracker.Common.DataEntity",
+        "projectPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutTracker.Common.DataEntity.csproj",
         "packagesPath": "C:\\Users\\Ethealoner\\.nuget\\packages\\",
         "outputPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\obj\\",
         "projectStyle": "PackageReference",

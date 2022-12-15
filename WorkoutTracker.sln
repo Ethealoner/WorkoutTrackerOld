@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutOrganizer.Common.DataEntity", "WorkoutOrganizer.Common.DataEntity\WorkoutOrganizer.Common.DataEntity.csproj", "{9457BE7F-1995-4D20-92AF-3997E31BE071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutTracker.Common.DataEntity", "WorkoutOrganizer.Common.DataEntity\WorkoutTracker.Common.DataEntity.csproj", "{9457BE7F-1995-4D20-92AF-3997E31BE071}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutOrganizer.Common.DataContext", "WorkoutOrganizer.Common.DataContext\WorkoutOrganizer.Common.DataContext.csproj", "{E067EEB4-52A3-4075-87CE-3B7235793C88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutTracker.Common.DataContext", "WorkoutOrganizer.Common.DataContext\WorkoutTracker.Common.DataContext.csproj", "{E067EEB4-52A3-4075-87CE-3B7235793C88}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "WorkoutOrganizer.Common.Angular", "WorkoutOrganizer.Common.Angular\WorkoutOrganizer.Common.Angular.esproj", "{EB85E250-9D9A-4D34-96CC-E20D61BA0DB4}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "WorkoutTracker.Common.Angular", "WorkoutOrganizer.Common.Angular\WorkoutTracker.Common.Angular.esproj", "{EB85E250-9D9A-4D34-96CC-E20D61BA0DB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutOrganizer.Common.WebAPI", "WorkoutOrganizer.Common.WebAPI\WorkoutOrganizer.Common.WebAPI.csproj", "{0B0F692D-23D7-4322-8524-3843A887F4CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutTracker.Common.WebAPI", "WorkoutOrganizer.Common.WebAPI\WorkoutTracker.Common.WebAPI.csproj", "{0B0F692D-23D7-4322-8524-3843A887F4CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

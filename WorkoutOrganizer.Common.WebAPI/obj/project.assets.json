@@ -1953,33 +1953,33 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "WorkoutOrganizer.Common.DataContext/1.0.0": {
+      "WorkoutTracker.Common.DataContext/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
-          "WorkoutOrganizer.Common.DataEntity": "1.0.0"
+          "WorkoutTracker.Common.DataEntity": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WorkoutOrganizer.Common.DataContext.dll": {}
+          "bin/placeholder/WorkoutTracker.Common.DataContext.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WorkoutOrganizer.Common.DataContext.dll": {}
+          "bin/placeholder/WorkoutTracker.Common.DataContext.dll": {}
         }
       },
-      "WorkoutOrganizer.Common.DataEntity/1.0.0": {
+      "WorkoutTracker.Common.DataEntity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6"
         },
         "compile": {
-          "bin/placeholder/WorkoutOrganizer.Common.DataEntity.dll": {}
+          "bin/placeholder/WorkoutTracker.Common.DataEntity.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WorkoutOrganizer.Common.DataEntity.dll": {}
+          "bin/placeholder/WorkoutTracker.Common.DataEntity.dll": {}
         }
       }
     }
@@ -7096,21 +7096,21 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "WorkoutOrganizer.Common.DataContext/1.0.0": {
+    "WorkoutTracker.Common.DataContext/1.0.0": {
       "type": "project",
-      "path": "../WorkoutOrganizer.Common.DataContext/WorkoutOrganizer.Common.DataContext.csproj",
-      "msbuildProject": "../WorkoutOrganizer.Common.DataContext/WorkoutOrganizer.Common.DataContext.csproj"
+      "path": "../WorkoutOrganizer.Common.DataContext/WorkoutTracker.Common.DataContext.csproj",
+      "msbuildProject": "../WorkoutOrganizer.Common.DataContext/WorkoutTracker.Common.DataContext.csproj"
     },
-    "WorkoutOrganizer.Common.DataEntity/1.0.0": {
+    "WorkoutTracker.Common.DataEntity/1.0.0": {
       "type": "project",
-      "path": "../WorkoutOrganizer.Common.DataEntity/WorkoutOrganizer.Common.DataEntity.csproj",
-      "msbuildProject": "../WorkoutOrganizer.Common.DataEntity/WorkoutOrganizer.Common.DataEntity.csproj"
+      "path": "../WorkoutOrganizer.Common.DataEntity/WorkoutTracker.Common.DataEntity.csproj",
+      "msbuildProject": "../WorkoutOrganizer.Common.DataEntity/WorkoutTracker.Common.DataEntity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Swashbuckle.AspNetCore >= 6.4.0",
-      "WorkoutOrganizer.Common.DataContext >= 1.0.0"
+      "WorkoutTracker.Common.DataContext >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7121,9 +7121,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.WebAPI\\WorkoutOrganizer.Common.WebAPI.csproj",
-      "projectName": "WorkoutOrganizer.Common.WebAPI",
-      "projectPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.WebAPI\\WorkoutOrganizer.Common.WebAPI.csproj",
+      "projectUniqueName": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.WebAPI\\WorkoutTracker.Common.WebAPI.csproj",
+      "projectName": "WorkoutTracker.Common.WebAPI",
+      "projectPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.WebAPI\\WorkoutTracker.Common.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Ethealoner\\.nuget\\packages\\",
       "outputPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
@@ -7147,8 +7147,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataContext\\WorkoutOrganizer.Common.DataContext.csproj": {
-              "projectPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataContext\\WorkoutOrganizer.Common.DataContext.csproj"
+            "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataContext\\WorkoutTracker.Common.DataContext.csproj": {
+              "projectPath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataContext\\WorkoutTracker.Common.DataContext.csproj"
             }
           }
         }

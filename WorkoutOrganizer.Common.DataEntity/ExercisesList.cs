@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace WorkoutOrganizer.Common.DataEntity;
+namespace WorkoutTracker.Common.DataEntity;
 
 [Table("ExercisesList")]
 public class ExercisesList

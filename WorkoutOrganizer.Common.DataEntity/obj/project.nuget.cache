@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "615siXn9xMkryroACRDWQyvQtorNfXaDL/8xhW8dLfcWTf7IfCg4QghOhQirKksB3tvscvVSYBfTf/m1Ci4TYA==",
+  "dgSpecHash": "GdnjB89X6mZLKJHQSjNkH4ACRxQJgiyYBETFTXarK1PRvraZGB6tXy3gZbOqcyisEIMVOkfoalniGZS2peF9yw==",
   "success": true,
-  "projectFilePath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutOrganizer.Common.DataEntity.csproj",
+  "projectFilePath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataEntity\\WorkoutTracker.Common.DataEntity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ethealoner\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Ethealoner\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",

@@ -1,0 +1,14 @@
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\bin\Debug\net6.0\WorkoutTracker.Common.DataEntity.deps.json
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\bin\Debug\net6.0\WorkoutTracker.Common.DataEntity.runtimeconfig.json
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\bin\Debug\net6.0\WorkoutTracker.Common.DataEntity.dll
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\bin\Debug\net6.0\WorkoutTracker.Common.DataEntity.pdb
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\WorkoutTracker.Common.DataEntity.csproj.AssemblyReference.cache
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\WorkoutTracker.Common.DataEntity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\WorkoutTracker.Common.DataEntity.AssemblyInfoInputs.cache
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\WorkoutTracker.Common.DataEntity.AssemblyInfo.cs
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\WorkoutTracker.Common.DataEntity.csproj.CoreCompileInputs.cache
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\WorkoutTracker.Common.DataEntity.dll
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\refint\WorkoutTracker.Common.DataEntity.dll
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\WorkoutTracker.Common.DataEntity.pdb
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\WorkoutTracker.Common.DataEntity.genruntimeconfig.cache
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.DataEntity\obj\Debug\net6.0\ref\WorkoutTracker.Common.DataEntity.dll

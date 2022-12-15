@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using WorkoutOrganizer.Common.DataContext;
+using WorkoutTracker.Common.DataContext;
 
-namespace WorkoutOrganizer.Common.WebAPI.Controllers
+namespace WorkoutTracker.Common.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/exercise")]
