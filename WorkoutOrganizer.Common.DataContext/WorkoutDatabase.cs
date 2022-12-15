@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using WorkoutOrganizer.Common.DataEntity;
+using WorkoutTracker.Common.DataEntity;
 
-namespace WorkoutOrganizer.Common.DataContext;
+namespace WorkoutTracker.Common.DataContext;
 
 public class WorkoutDatabase : DbContext
 {

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WorkoutOrganizer.Common.DataEntity\WorkoutOrganizer.Common.DataEntity.csproj" />
+    <ProjectReference Include="..\WorkoutOrganizer.Common.DataEntity\WorkoutTracker.Common.DataEntity.csproj" />
   </ItemGroup>
 
 </Project>

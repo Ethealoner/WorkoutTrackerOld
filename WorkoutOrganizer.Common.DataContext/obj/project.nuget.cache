@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d4oq7C8sUlTFXii9iI2qUDKffiR9bfLXN4aKV6eztQC3j9rezfX7SuSDf4jpUUw4zAA5fxy7YOF64toeOht/Kw==",
+  "dgSpecHash": "nNjfvlCkqIv4e0NJilOIhdKJCCYVINOTugXMi6EOfavdz/STJdopDXDJqZfXaPBtZd1Ehd2IWWBYKM0rbcSFyw==",
   "success": true,
-  "projectFilePath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataContext\\WorkoutOrganizer.Common.DataContext.csproj",
+  "projectFilePath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.DataContext\\WorkoutTracker.Common.DataContext.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ethealoner\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ethealoner\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

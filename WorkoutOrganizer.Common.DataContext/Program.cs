@@ -1,5 +1,5 @@
-﻿using WorkoutOrganizer.Common.DataContext;
-using WorkoutOrganizer.Common.DataEntity;
+﻿using WorkoutTracker.Common.DataContext;
+using WorkoutTracker.Common.DataEntity;
 
 static void ViewBasicTables()
 {

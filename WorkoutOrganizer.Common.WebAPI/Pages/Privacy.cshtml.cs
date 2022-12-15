@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WorkoutOrganizer.Common.WebAPI.Pages
+namespace WorkoutTracker.Common.WebAPI.Pages
 {
     public class PrivacyModel : PageModel
     {

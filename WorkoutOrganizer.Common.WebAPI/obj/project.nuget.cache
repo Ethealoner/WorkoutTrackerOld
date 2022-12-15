@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5WbD8Sb5eg4TP0lQWn6J4bwlSMYkVenpXSz1jni9zjf1prV5pEAviDQBBo6369ViFr9fHnpvNaTkg0zcrNd0QA==",
+  "dgSpecHash": "c9Qu+x9puQcDueG6qJleQWKV3QP87al/o6hR6ZalODF8Ccr322IamV9ugT5DL0R1l1qwnYk3nfw7wa7xS8Geng==",
   "success": true,
-  "projectFilePath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.WebAPI\\WorkoutOrganizer.Common.WebAPI.csproj",
+  "projectFilePath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.WebAPI\\WorkoutTracker.Common.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ethealoner\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ethealoner\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
