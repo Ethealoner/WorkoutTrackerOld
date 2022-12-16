@@ -18,5 +18,5 @@ public class WorkoutSession
     public DateTime WorkoutDate { get; set; }
 
     [InverseProperty("WorkoutSession")]
-    public virtual ICollection<ExercisesList> ExercisesLists { get; } = new List<ExercisesList>();
+    public virtual ICollection<Exercise> Exercises { get; } = new List<Exercise>();
 }

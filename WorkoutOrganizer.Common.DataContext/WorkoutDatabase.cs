@@ -18,8 +18,6 @@ public class WorkoutDatabase : DbContext
 
     public virtual DbSet<Exercise> Exercises { get; set; }
 
-    public virtual DbSet<ExercisesList> ExercisesLists { get; set; }
-
     public virtual DbSet<WorkoutSession> WorkoutSessions { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -32,18 +30,9 @@ public class WorkoutDatabase : DbContext
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
 
-            entity.HasOne(d => d.ExerciseNavigation).WithMany(p => p.Exercises)
+            entity.HasOne(d => d.WorkoutSession).WithMany(p => p.Exercises)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Exercise_ExercisesList");
-        });
-
-        modelBuilder.Entity<ExercisesList>(entity =>
-        {
-            entity.Property(e => e.ExercisesId).ValueGeneratedNever();
-
-            entity.HasOne(d => d.WorkoutSession).WithMany(p => p.ExercisesLists)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_ExercisesList_WorkoutSession");
+                .HasConstraintName("FK_Exercise_WorkoutSession");
         });
 
         modelBuilder.Entity<WorkoutSession>(entity =>

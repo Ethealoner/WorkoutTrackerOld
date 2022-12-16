@@ -76,7 +76,7 @@ namespace WorkoutTracker.Common.WebAPI.Controllers
             workoutDatabase.Exercises.Remove(exercise);
             await workoutDatabase.SaveChangesAsync();
             return Ok();
-
+            
         }
     }
 }

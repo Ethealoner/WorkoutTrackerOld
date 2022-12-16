@@ -12,7 +12,7 @@ public class Exercise
     [Key]
     public int Id { get; set; }
 
-    public int ExerciseId { get; set; }
+    public int WorkoutSessionId { get; set; }
 
     [Column(TypeName = "text")]
     public string Name { get; set; } = null!;
@@ -23,7 +23,7 @@ public class Exercise
     [Column(TypeName = "text")]
     public string Repetition { get; set; } = null!;
 
-    [ForeignKey("ExerciseId")]
+    [ForeignKey("WorkoutSessionId")]
     [InverseProperty("Exercises")]
-    public virtual ExercisesList? ExerciseNavigation { get; set; } = null!;
+    public virtual WorkoutSession? WorkoutSession { get; set; } = null!;
 }
