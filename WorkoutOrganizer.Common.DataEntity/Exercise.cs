@@ -25,5 +25,5 @@ public class Exercise
 
     [ForeignKey("ExerciseId")]
     [InverseProperty("Exercises")]
-    public virtual ExercisesList ExerciseNavigation { get; set; } = null!;
+    public virtual ExercisesList? ExerciseNavigation { get; set; } = null!;
 }

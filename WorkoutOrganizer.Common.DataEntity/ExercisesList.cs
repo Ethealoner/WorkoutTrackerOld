@@ -19,5 +19,5 @@ public class ExercisesList
 
     [ForeignKey("WorkoutSessionId")]
     [InverseProperty("ExercisesLists")]
-    public virtual WorkoutSession WorkoutSession { get; set; } = null!;
+    public virtual WorkoutSession? WorkoutSession { get; set; } = null!;
 }
