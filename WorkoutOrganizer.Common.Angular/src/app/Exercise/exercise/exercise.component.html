@@ -1,0 +1,23 @@
+<div class="container my-5">
+  <h1 class="mb-3">Exercises</h1>
+  <table class="table" *ngIf="exercises && exercises.length > 0">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>TypeOfExericse</th>
+        <th>repettion</th>
+        <th>id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <tr *ngFor="let exercise of exercises">
+        <td>{{exercise.name}}</td>
+        <td>{{exercise.typeOfExercise}}</td>
+        <td>{{exercise.repetition}}</td>
+        <td>{{exercise.id}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="!exercises || exercises.length <= 0">No exercises found</p>
+</div>

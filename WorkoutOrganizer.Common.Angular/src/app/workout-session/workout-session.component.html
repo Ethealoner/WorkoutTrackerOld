@@ -1,0 +1,19 @@
+<div class="container my-5">
+  <h1 class="mb-3">Workout Sessions</h1>
+  <table class="table" *ngIf="workoutSessions && workoutSessions.length > 0">
+    <thead>
+      <tr>
+        <th>Workout Score</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <tr *ngFor="let workoutSession of workoutSessions">
+          <td>{{workoutSession.workoutScore}}</td>
+          <td>{{workoutSession.workoutDate}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="!workoutSessions || workoutSessions.length <= 0">No workout sessions found</p>
+</div>
