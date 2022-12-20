@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ExerciseComponent } from './Exercise/exercise/exercise.component';
-import { AppRoutingModule } from './Exercise/app-routing.module';
-import { WorkoutSessionComponent } from './workout-session/workout-session.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ExerciseComponent } from './Components/exercise.component';
+import { WorkoutSessionComponent } from './Components/workout-session.component';
 
 @NgModule({
   declarations: [

@@ -7,7 +7,7 @@
     <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\app\Exercise\" />
     <Folder Include="src\app\Services\" />
+    <Folder Include="src\app\workout-session\" />
   </ItemGroup>
 </Project>
