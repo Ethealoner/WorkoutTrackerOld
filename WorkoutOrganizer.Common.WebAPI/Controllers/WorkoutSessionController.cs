@@ -16,7 +16,7 @@ namespace WorkoutTracker.Common.WebAPI.Controllers
             this.workoutDatabase = workoutDatabase;
         }
         [HttpGet]
-        public async Task<IActionResult> GetAllExercises()
+        public async Task<IActionResult> GetAllWorkoutSessions()
         {
             var workoutSessions = await workoutDatabase.WorkoutSessions.ToListAsync();
             return Ok(workoutSessions);
@@ -32,7 +32,7 @@ namespace WorkoutTracker.Common.WebAPI.Controllers
 
         [HttpPut]
         [Route("{id}")]
-        public async Task<IActionResult> UpdateExercise([FromRoute] int id, WorkoutSession updateWorkoutSessions)
+        public async Task<IActionResult> UpdateWorkoutSessions([FromRoute] int id, WorkoutSession updateWorkoutSessions)
         {
             WorkoutSession workoutSessions = await workoutDatabase.WorkoutSessions.FindAsync(id);
 
@@ -49,20 +49,23 @@ namespace WorkoutTracker.Common.WebAPI.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public async Task<IActionResult> GetExercises([FromRoute] int id)
+        public async Task<IActionResult> GetWorkoutSession([FromRoute] int id)
         {
-            var workoutSessions = await workoutDatabase.WorkoutSessions.FirstOrDefaultAsync(x => x.WorkoutSessionId == id);
+            var workoutSessions = await workoutDatabase.WorkoutSessions.
+                Where(x => x.WorkoutSessionId == id)
+                .Include(x => x.Exercises)
+                .ToListAsync();
 
             if (workoutSessions == null)
             {
                 return NotFound();
             }
-            return Ok(workoutSessions);
+            return Ok(workoutSessions.ElementAt(0));
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public async Task<IActionResult> DeleteExercise([FromRoute] int id)
+        public async Task<IActionResult> DeleteWorkoutSessions([FromRoute] int id)
         {
             var workoutSessions = await workoutDatabase.WorkoutSessions.FirstOrDefaultAsync(x => x.WorkoutSessionId == id);
 

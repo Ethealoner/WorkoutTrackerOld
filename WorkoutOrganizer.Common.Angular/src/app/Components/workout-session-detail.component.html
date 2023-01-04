@@ -1,0 +1,26 @@
+<div *ngIf="workoutSession">
+
+  <h2>Workout Session</h2>
+  <div>Date: {{workoutSession.workoutDate}}</div>
+  <div>Workout Score: {{workoutSession.workoutDate}}</div>
+  <div *ngIf="workoutSession!.exercises">
+    <thead>
+      <tr>
+        <th>Exercise name</th>
+        <th>Type of Exercise</th>
+        <th>Repetition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let exercise of workoutSession.exercises">
+        <td>{{exercise.name | uppercase}}</td>
+        <td>{{exercise.typeOfExercise}}</td>
+        <td>{{exercise.repetition}}</td>
+        <td><input class='myclass' type='button' routerLink="/exercise/{{exercise.id}}" value='Go to exercise detail' /></td>
+      </tr>
+    </tbody>
+  </div>
+</div>
+
+<button type="button" (click)="goBack()">go back</button>
+<p *ngIf="!workoutSession">No Workout Session found</p>

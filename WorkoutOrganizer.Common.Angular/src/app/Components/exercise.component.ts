@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Exercise } from '../Models/exercise.model';
 import { ExerciseService } from '../Services/exercise.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-exercise',
@@ -9,21 +11,30 @@ import { ExerciseService } from '../Services/exercise.service';
 })
 export class ExerciseComponent implements OnInit {
 
-  exercises: Exercise[] = [];
-  constructor(private exerciseServices: ExerciseService) { }
+  @Input() exercise?: Exercise;
+
+  constructor(
+    private exerciseServices: ExerciseService,
+    private route: ActivatedRoute,
+    private location: Location
+  ) { }
 
   ngOnInit(): void {
-    console.log("sending exercises request");
-    this.exerciseServices.getAllExercises()
-      .subscribe({
-        next: (exercise) => {
-          this.exercises = exercise;
-          console.log(exercise);
-        },
-        error: (response) => {
-          console.log(response);
-        }
-      });
+    this.getExercise();
+  }
+
+  getExercise(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.exerciseServices.getExercise(id).subscribe(exercise => this.exercise = exercise);
+  }
+
+  goBack(): void {
+    this.location.back();
+  }
+  save(): void {
+    if (this.exercise) {
+      this.exerciseServices.updateExercise(this.exercise).subscribe();
+    }
   }
 
 }

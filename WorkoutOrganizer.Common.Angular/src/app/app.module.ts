@@ -6,15 +6,18 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ExerciseComponent } from './Components/exercise.component';
 import { WorkoutSessionComponent } from './Components/workout-session.component';
+import { WorkoutSessionDetailComponent } from './Components/workout-session-detail.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExerciseComponent,
-    WorkoutSessionComponent
+    WorkoutSessionComponent,
+    WorkoutSessionDetailComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, AppRoutingModule
+    BrowserModule, HttpClientModule, AppRoutingModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

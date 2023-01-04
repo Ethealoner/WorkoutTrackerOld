@@ -12,8 +12,11 @@
         <tr *ngFor="let workoutSession of workoutSessions">
           <td>{{workoutSession.workoutScore}}</td>
           <td>{{workoutSession.workoutDate}}</td>
+          <td><input class='myclass' type='button'  routerLink="/workoutSessionDetail/{{workoutSession.workoutSessionId}}" value='Go to workout session'/></td>
       </tr>
     </tbody>
   </table>
   <p *ngIf="!workoutSessions || workoutSessions.length <= 0">No workout sessions found</p>
 </div>
+
+
