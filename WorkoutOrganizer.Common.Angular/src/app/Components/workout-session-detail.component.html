@@ -2,8 +2,8 @@
 
   <h2>Workout Session</h2>
   <div>Date: {{workoutSession.workoutDate}}</div>
-  <div>Workout Score: {{workoutSession.workoutDate}}</div>
-  <div *ngIf="workoutSession!.exercises">
+  <div>Workout Score: {{workoutSession.workoutScore}}</div>
+  <div *ngIf="workoutSession!.exercises && workoutSession!.exercises.length > 0">
     <thead>
       <tr>
         <th>Exercise name</th>

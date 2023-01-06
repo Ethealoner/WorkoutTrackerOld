@@ -9,8 +9,8 @@ namespace WorkoutTracker.Common.DataEntity;
 [Table("WorkoutSession")]
 public class WorkoutSession
 {
-    [Key]
-    public int WorkoutSessionId { get; set; }
+    [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int ?WorkoutSessionId { get; set; }
 
     public double WorkoutScore { get; set; }
 

@@ -24,9 +24,10 @@ namespace WorkoutTracker.Common.WebAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddWorkoutSessions([FromBody] WorkoutSession workoutSessions)
         {
+            workoutSessions.WorkoutSessionId = null;
             await workoutDatabase.WorkoutSessions.AddAsync(workoutSessions);
 
-            workoutDatabase.SaveChangesAsync();
+            _ = workoutDatabase.SaveChangesAsync();
             return Ok();
         }
 

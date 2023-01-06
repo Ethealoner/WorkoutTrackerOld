@@ -40,7 +40,7 @@ public class WorkoutDatabase : DbContext
 
         modelBuilder.Entity<WorkoutSession>(entity =>
         {
-            entity.Property(e => e.WorkoutSessionId).ValueGeneratedNever();
+            entity.Property(e => e.WorkoutSessionId).ValueGeneratedOnAdd();
         });
 
     }
