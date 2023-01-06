@@ -3,4 +3,5 @@ export interface Exercise {
   typeOfExercise: string;
   repetition: string;
   id: number;
+  workoutSessionId: number;
 }

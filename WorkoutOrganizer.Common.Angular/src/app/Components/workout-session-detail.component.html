@@ -17,9 +17,13 @@
         <td>{{exercise.typeOfExercise}}</td>
         <td>{{exercise.repetition}}</td>
         <td><input class='myclass' type='button' routerLink="/exercise/{{exercise.id}}" value='Go to exercise detail' /></td>
+        <td><button type="button" class="delete-button" (click)="deleteExercise(exercise.id); exercise.id=0">X</button></td>
       </tr>
     </tbody>
   </div>
+  <button type="button" class="add-button" (click)="addExercies(workoutSession.workoutSessionId); workoutSession.workoutSessionId=0">
+    Add exercise
+  </button>
 </div>
 
 <button type="button" (click)="goBack()">go back</button>

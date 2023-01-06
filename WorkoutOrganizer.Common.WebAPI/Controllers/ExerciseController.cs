@@ -26,9 +26,11 @@ namespace WorkoutTracker.Common.WebAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddExercise([FromBody] Exercise exercise)
         {
+            // Set Id to null so that DB can auto increment this value
+            exercise.Id = null;
             await workoutDatabase.Exercises.AddAsync(exercise);
 
-            workoutDatabase.SaveChangesAsync();
+            _ = workoutDatabase.SaveChangesAsync();
             return Ok();
         }
 

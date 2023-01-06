@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { WorkoutSession } from '../Models/workout-session.model';
 import { WorkoutSessionService } from '../Services/workout-session.service';
 import { Location } from '@angular/common';
+import { ExerciseService } from '../Services/exercise.service';
+import { Exercise } from '../Models/exercise.model';
 
 @Component({
   selector: 'app-workout-session-detail',
@@ -15,6 +17,7 @@ export class WorkoutSessionDetailComponent implements OnInit {
 
   constructor(
     private workoutSessionServices: WorkoutSessionService,
+    private exerciseServices: ExerciseService,
     private route: ActivatedRoute,
     private location: Location
   ) { }
@@ -31,5 +34,30 @@ export class WorkoutSessionDetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  addExercies(id: number): void {
+    var exercise: Exercise = {
+        name: "New Exercise",
+      typeOfExercise: "",
+      repetition: "",
+        workoutSessionId: id,
+        id: 0
+    };
+    this.exerciseServices.addExercise(exercise)
+      .subscribe(
+        (data) => {
+          this.ngOnInit();
+        }
+      );
+  }
+
+  deleteExercise(id: number): void {
+    this.exerciseServices.deleteExercise(id)
+      .subscribe(
+        (data) => {
+          this.ngOnInit();
+        }
+      );
   }
 }

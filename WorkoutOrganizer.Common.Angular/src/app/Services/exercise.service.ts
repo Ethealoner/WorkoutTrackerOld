@@ -27,4 +27,12 @@ export class ExerciseService {
   updateExercise(exercise: Exercise): Observable<any> {
     return this.http.put(this.baseApiUrl + `api/exercise/${exercise.id}`, exercise, this.httpOptions);
   }
+
+  deleteExercise(id: number): Observable<Exercise> {
+    return this.http.delete<Exercise>(this.baseApiUrl + `api/exercise/${id}`, this.httpOptions);
+  }
+
+  addExercise(exercise: Exercise): Observable<Exercise> {
+    return this.http.post<Exercise>(this.baseApiUrl + `api/exercise`, exercise, this.httpOptions);
+  }
 }
