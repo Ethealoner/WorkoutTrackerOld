@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ExerciseComponent } from './Components/exercise.component';
 import { WorkoutSessionComponent } from './Components/workout-session.component';
 import { WorkoutSessionDetailComponent } from './Components/workout-session-detail.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { FormsModule } from '@angular/forms';
     WorkoutSessionDetailComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, AppRoutingModule, FormsModule
+    BrowserModule, HttpClientModule, AppRoutingModule, FormsModule, ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

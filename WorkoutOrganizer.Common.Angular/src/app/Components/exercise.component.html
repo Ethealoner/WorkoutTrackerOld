@@ -8,7 +8,9 @@
     <label for="exericse-name">Exercise Name: </label>
     <input id="exercise-name" [(ngModel)]="exercise.name" placeholder="exercise name" />
     <label for="exercise-typeOfExercise">Type of exercise</label>
-    <input id="exercise-typeOfExercise" [(ngModel)]="exercise.typeOfExercise" placeholder="type of exercise" />
+    <select [formControl]="exerciseTypesForms">
+      <option *ngFor="let type of exerciseTypes" [value]="type" [selected]="type">{{type}}</option>
+    </select>
     <label for="exercise-repetition">exercise repetition</label>
     <input id="exercise-repetition" [(ngModel)]="exercise.repetition" placeholder="exercise repetition" />
   </div>
@@ -16,3 +18,9 @@
 </div>
 
 <button type="button" (click)="goBack()">go back</button>
+<select name="demo" id="#">
+  <option selected="selected" value="one">Option 1</option>
+  <option value="two">Option 2</option>
+  <option value="three">Option 3</option>
+</select>
+

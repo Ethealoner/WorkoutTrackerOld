@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Exercise } from '../Models/exercise.model';
 import { ExerciseService } from '../Services/exercise.service';
 import { Location } from '@angular/common';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-exercise',
@@ -12,6 +13,8 @@ import { Location } from '@angular/common';
 export class ExerciseComponent implements OnInit {
 
   @Input() exercise?: Exercise;
+  exerciseTypesForms = new FormControl('');
+  exerciseTypes: string[] = ['weight', 'distance'];
 
   constructor(
     private exerciseServices: ExerciseService,
@@ -21,6 +24,11 @@ export class ExerciseComponent implements OnInit {
 
   ngOnInit(): void {
     this.getExercise();
+
+    this.exerciseTypesForms.valueChanges
+      .subscribe(ch => {
+        this.onExerciseTypeChanged(ch!);
+      });
   }
 
   getExercise(): void {
@@ -36,5 +44,12 @@ export class ExerciseComponent implements OnInit {
       this.exerciseServices.updateExercise(this.exercise).subscribe();
     }
   }
+
+  onExerciseTypeChanged(value: string): void {
+    if (this.exercise) {
+      this.exercise.typeOfExercise = value;
+    }
+  }
+
 
 }
