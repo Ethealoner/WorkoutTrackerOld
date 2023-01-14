@@ -19,9 +19,9 @@
 
       <div *ngFor="let rep of reps.controls; let i=index" [formGroupName]="i">
         {{exerciseTypeLabel1}}:
-        <input id="rep-{{ i }}" type="number" min="1" formControlName="repsNumber" />
+        <input id="rep-{{ i }}" type="number" min=1 formControlName="repsNumber" numbersOnly/>
         / {{exerciseTypeLabel2}}:
-        <input id="weight-{{ i }}" type="number" min="0" formControlName="repsDifficulty" />
+        <input id="weight-{{ i }}" type="number" min=0 formControlName="repsDifficulty" numbersOnly/>
         {{exerciseTypeLabel3}}
         <button type="button" (click)="removeExerciseRep(i)">X</button>
       </div>

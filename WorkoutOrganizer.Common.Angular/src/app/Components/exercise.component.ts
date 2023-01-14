@@ -99,8 +99,8 @@ export class ExerciseComponent implements OnInit {
 
   addExerciseRep(): void {
     const exerciseGroup = this.formBuilder.group({
-      repsNumber: ['1', Validators.required],
-      repsDifficulty: ['1', Validators.required]
+      repsNumber: [1, Validators.required],
+      repsDifficulty: [1, Validators.required]
     });
 
     this.reps.push(exerciseGroup);
