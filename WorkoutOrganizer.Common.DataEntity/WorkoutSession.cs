@@ -16,7 +16,12 @@ public class WorkoutSession
 
     [Column(TypeName = "date")]
     public DateTime WorkoutDate { get; set; }
+    public int UserId { get; set; }
 
     [InverseProperty("WorkoutSession")]
     public virtual ICollection<Exercise> Exercises { get; } = new List<Exercise>();
+
+    [ForeignKey("UserId")]
+    [InverseProperty("WorkoutSessions")]
+    public virtual User? User { get; set; } = null!;
 }

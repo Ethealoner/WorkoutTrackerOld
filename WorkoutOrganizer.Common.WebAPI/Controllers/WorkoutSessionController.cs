@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WorkoutTracker.Common.DataContext;
 using WorkoutTracker.Common.DataEntity;
@@ -6,6 +7,7 @@ using WorkoutTracker.Common.DataEntity;
 namespace WorkoutTracker.Common.WebAPI.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/workoutsession")]
     public class WorkoutSessionController : Controller
     {
@@ -16,9 +18,12 @@ namespace WorkoutTracker.Common.WebAPI.Controllers
             this.workoutDatabase = workoutDatabase;
         }
         [HttpGet]
-        public async Task<IActionResult> GetAllWorkoutSessions()
+        [Route("usersWorkoutSessions/{userId}")]
+        public async Task<IActionResult> GetAllWorkoutSessions([FromRoute] int userId)
         {
-            var workoutSessions = await workoutDatabase.WorkoutSessions.ToListAsync();
+            var workoutSessions = await workoutDatabase.WorkoutSessions
+                .Where(x => x.UserId == userId)
+                .ToListAsync();
             return Ok(workoutSessions);
         }
         [HttpPost]

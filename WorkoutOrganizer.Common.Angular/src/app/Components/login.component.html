@@ -1,0 +1,23 @@
+<div class="loginContainer">
+  <form #loginForm="ngForm" (ngSubmit)="LoginUser(loginForm)">
+    <h2>Login</h2>
+    <div *ngIf="invalidLogin">Invalid username or password</div>
+    <br/>
+    <label>User name:</label>
+    <input type="text" id="username" name="username" [(ngModel)]="credentials.username" placeholder="User name" required>
+    <br/>
+    <label>Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="credentials.password" placeholder="password" required>
+    <br/>
+    <button type="submit" [disabled]="!loginForm.valid" >Log in</button>
+  </form>
+</div>
+
+<div *ngIf="isUserLoggedIn" style="color:green;" >
+  You are logged in
+  <button type="submit" (click)="Logout()">Log out</button>
+</div>
+
+<div *ngIf="!isUserLoggedIn">
+  <button [routerLink]="'../register'">Register</button>
+</div>

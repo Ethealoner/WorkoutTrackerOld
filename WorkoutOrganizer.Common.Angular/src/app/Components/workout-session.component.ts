@@ -34,9 +34,10 @@ export class WorkoutSessionComponent implements OnInit {
   addWorkoutSession(): void {
     var workoutSession: WorkoutSession = {
         workoutSessionId: 0,
-      workoutScore: 0,
-      workoutDate: this.currentDate.toISOString(),
-        exercises: []
+        workoutScore: 0,
+        workoutDate: this.currentDate.toISOString(),
+        exercises: [],
+        UserId: Number(localStorage.getItem("userId"))
     };
 
     this.workoutSessionService.addWorkoutSession(workoutSession)

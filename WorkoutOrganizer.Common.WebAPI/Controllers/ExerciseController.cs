@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 using WorkoutTracker.Common.DataContext;
@@ -12,6 +13,7 @@ namespace WorkoutTracker.Common.WebAPI.Controllers
         public int repsDifficulty { get; set; }
     }
     [ApiController]
+    [Authorize]
     [Route("api/exercise")]
     public class ExerciseController : Controller
     {
@@ -104,6 +106,7 @@ namespace WorkoutTracker.Common.WebAPI.Controllers
             
         }
 
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<bool> CalculateExerciseScore(int sessionId)
         {
             WorkoutSession session = await workoutDatabase.WorkoutSessions

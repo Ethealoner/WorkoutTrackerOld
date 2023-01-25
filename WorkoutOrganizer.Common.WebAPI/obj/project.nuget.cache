@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "c9Qu+x9puQcDueG6qJleQWKV3QP87al/o6hR6ZalODF8Ccr322IamV9ugT5DL0R1l1qwnYk3nfw7wa7xS8Geng==",
+  "dgSpecHash": "xysahVYqFbT0d78LZzuhXJxwBxdOt3HtviUwln/0COcf83FWXv1GE77Z97/xOHzhcfm3F8Q38WDvRCj9IvqH4w==",
   "success": true,
   "projectFilePath": "D:\\Abyss\\Projects\\WorkoutOrganizer\\WorkoutOrganizer\\WorkoutOrganizer.Common.WebAPI\\WorkoutTracker.Common.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ethealoner\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ethealoner\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Ethealoner\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.13\\microsoft.aspnetcore.authentication.jwtbearer.6.0.13.nupkg.sha512",
     "C:\\Users\\Ethealoner\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Ethealoner\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Ethealoner\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

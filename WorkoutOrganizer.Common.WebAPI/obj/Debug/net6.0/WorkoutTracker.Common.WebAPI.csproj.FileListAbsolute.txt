@@ -86,3 +86,4 @@ D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.WebA
 D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.WebAPI\obj\Debug\net6.0\WorkoutTracker.Common.WebAPI.pdb
 D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.WebAPI\obj\Debug\net6.0\WorkoutTracker.Common.WebAPI.genruntimeconfig.cache
 D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.WebAPI\obj\Debug\net6.0\ref\WorkoutTracker.Common.WebAPI.dll
+D:\Abyss\Projects\WorkoutOrganizer\WorkoutOrganizer\WorkoutOrganizer.Common.WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

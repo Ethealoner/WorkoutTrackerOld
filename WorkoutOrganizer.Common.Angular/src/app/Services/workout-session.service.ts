@@ -17,14 +17,11 @@ export class WorkoutSessionService {
   constructor(private htpp: HttpClient) { }
 
   getAllWorkoutSessions(): Observable<WorkoutSession[]> {
-    return this.htpp.get<WorkoutSession[]>(this.baseApiUrl + 'api/workoutsession');
+    const userId = Number(localStorage.getItem("userId"))
+    return this.htpp.get<WorkoutSession[]>(this.baseApiUrl + `api/workoutsession/usersWorkoutSessions/${userId}`);
   }
 
   getWorkoutSession(id: number): Observable<WorkoutSession> {
-     this.htpp.get<WorkoutSession>(this.baseApiUrl + `api/workoutsession/${id}`)
-      .subscribe(data => {
-        console.log(data);
-      });
     return this.htpp.get<WorkoutSession>(this.baseApiUrl + `api/workoutsession/${id}`);
   }
 
